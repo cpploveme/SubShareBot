@@ -1,0 +1,21 @@
+Admin:
+- 你的id
+SuAdmin:
+- 你的id
+TelegramBotToken: 你的Bot Token
+
+Subscribe:
+  你的订阅名称:
+    Token:
+      你的密钥:
+        Count: -1
+        Expire: -1
+    Url: 你的订阅链接
+WebServer:
+  Path: /subscribe/token/
+  Port: 34567
+Convert:
+  Enable: 1
+  Backend: https://api.ytools.cc/
+  Config: https://cdn.jsdelivr.net/gh/lhl77/sub-ini@main/tsutsu-mini-gfw.ini
+  Parameter: "&emoji=true&remove_emoji=false&interval=3600&udp=true&expand=false&list=false&scv=true&fdn=true&new_name=true"

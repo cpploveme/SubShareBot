@@ -1,0 +1,21 @@
+Admin:
+- 你的id
+SuAdmin:
+- 你的id
+TelegramBotToken: 你的Bot Token
+
+Subscribe: # 订阅存储
+  你的订阅名称: # 订阅的名称 在导入时会以此进行命名
+    Token: # 密钥列表
+      你的密钥: # 自定义密钥 一个订阅可以设置多个密钥
+        Count: -1 # 使用此密钥导入的次数限制 -1 则为不限制
+        Expire: -1 # 使用此密钥导入的时间限制 以时间戳形式填入 -1 则为不限制
+    Url: 你的订阅链接 # 订阅链接
+WebServer:
+  Path: /subscribe/token/ # 订阅链接路径
+  Port: 34567 # 端口
+Convert: # 订阅转换
+  Enable: 1 # 是否启用订阅转换 不启用则无法使用内置自动转换功能
+  Backend: https://api.ytools.cc/ # 订阅转换后端 请务必加上 https:/ 和 /
+  Config: https://cdn.jsdelivr.net/gh/lhl77/sub-ini@main/tsutsu-mini-gfw.ini # 订阅转换的规则地址
+  Parameter: "&emoji=true&remove_emoji=false&interval=3600&udp=true&expand=false&list=false&scv=true&fdn=true&new_name=true" # 除订阅转换的target和config以外的参数 会进行拼接
